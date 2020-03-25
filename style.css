@@ -9,15 +9,16 @@ Generic
 }
 body {
 	font-family: 'Bai Jamjuree', sans-serif;
-	text-align: center;
 }
 p, ul li {
 	font-size: 1.8rem;
 	color: hsl(201, 11%, 66%);
 	margin-top: 15px;
+	text-align: center;
 }
 h1, h2, h3 {
 	color: hsl(210, 10%, 33%);
+	text-align: center;
 }
 h1 {
 	font-size: 3.3rem;
@@ -30,15 +31,18 @@ h3 {
 }
 a {
 	font-size: 2rem;
+	text-align: center;
 }
 ul li {
 	list-style: none;
 }
 footer {
+	text-align: center;
 	background-color: hsl(201, 11%, 95%);
 }
 header, .snippets-section, .clipboard-section, .supercharge-section, .client-logo-section, .CTA-section {
 	padding: 65px 5%;
+	text-align: center;
 }
 /*---------------------------------------------------
 Buttons
@@ -82,8 +86,8 @@ header {
 header img {
 	width: 100px;
 	margin-bottom: 50px;
+	margin-top: 50px;
 }
-
 /*---------------------------------------------------
 Main
 ---------------------------------------------------*/
@@ -115,9 +119,11 @@ padding-top: 50px;
 }
 /*Client Logo Section*/
 .client-logo-section ul li img{
+	width: 140px
+}
+.client-logo-section ul li{
 	padding: 25px;
 }
-
 /*---------------------------------------------------
 Footer
 ---------------------------------------------------*/
@@ -157,3 +163,132 @@ footer img{
 	font-size: 11px;
 	color: hsl(228, 45%, 44%);
 }
+/*---------------------------------------------------
+Media Queries
+---------------------------------------------------*/
+ @media only screen and (min-width: 420px) {
+ 	h1, h2, h3, p, .download-btn-ios, .download-btn-mac {
+ 		margin-left: auto;
+ 		margin-right: auto;
+ 		max-width: 70%;
+ 	}
+ }
+  @media only screen and (min-width: 700px) {
+
+ /*---------------------------------------------------
+ Header
+ ---------------------------------------------------*/
+ header {
+ 	background-image: url(images/bg-header-desktop.png);
+ 	background-size: cover;
+ }
+ /*---------------------------------------------------
+ Buttons
+ ---------------------------------------------------*/
+ .download-btn-ios,
+ .download-btn-mac {
+ 	width: 230px;
+ 	display: inline-block;
+ 	margin-right: 15px;
+ 	margin-left: 15px;
+ }
+ /*---------------------------------------------------
+ Main
+ ---------------------------------------------------*/
+ /*Snippets*/
+ .snippets-main img {
+ 	width: 80%;
+ }
+ /*Clipboard*/
+ .clipboard-section img {
+ 	width: 80%;
+ 	padding-top: 50px;
+ }
+ /*supercharge*/
+.supercharge-items p{
+	width: 50%;
+ }
+}
+@media only screen and (min-width: 900px) {
+   /*---------------------------------------------------
+   Main
+   ---------------------------------------------------*/
+   /*Snippets*/
+   .snippets-main {
+   	display: flex;
+   	align-items: center;
+   }
+  .snippets-image {
+  	margin-left: -20px;
+  }
+  .snippets-text p, .snippets-text h3 {
+  	text-align: left;
+  }
+  .snippets-text p {
+  	padding-right: 15%;
+  }
+  .snippets-text h3:first-of-type  {
+  	padding-top: 0;
+  }
+  .snippets-main img {
+  	width: auto ;
+  }
+  .snippets-section {
+  	padding: 65px 0;
+  }
+  /*Supercharge*/
+  .supercharge-container {
+		display: flex;
+  }
+  .supercharge-items {
+		flex: 1;
+  }
+  .supercharge-items h3 {
+		max-width: 100%;
+  }
+  .supercharge-items p {
+  	width: 100%;
+  }
+  /*Clipboard*/
+  .clipboard-section img {
+  	width: 60%;
+  	padding-top: 50px;
+  }
+  /*Client Logo Section*/
+  .client-logo-section ul li{
+  	padding: 40px;
+  	display: inline-block;
+  }
+    /*---------------------------------------------------
+    Footer
+    ---------------------------------------------------*/
+    footer ul {
+
+    }
+    footer ul li {
+    	text-align: left;
+    }
+    footer ul li:first-of-type {
+    	margin-top: 0;
+    }
+    .footer-container {
+    	margin: 0 50px;
+    	display: flex;
+    }
+    .footer-logo {
+  		flex: 1;
+    }
+    .more-info-section {
+    	flex: 4;
+    	column-count: 3;
+    	column-gap: 20px;
+  		padding: 0 60px;
+    }
+    .social-icons {
+    	flex: 1;
+    }
+    .attribution {
+    	margin-top: 50px;
+    }
+
+  }
