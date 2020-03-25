@@ -1,16 +1,159 @@
+/*---------------------------------------------------
+Generic
+---------------------------------------------------*/
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-size: 62.5%;
+}
+body {
+	font-family: 'Bai Jamjuree', sans-serif;
+	text-align: center;
+}
+p, ul li {
+	font-size: 1.8rem;
+	color: hsl(201, 11%, 66%);
+	margin-top: 15px;
+}
+h1, h2, h3 {
+	color: hsl(210, 10%, 33%);
+}
+h1 {
+	font-size: 3.3rem;
+}
+h2 {
+	font-size: 3rem;
+}
+h3 {
+	font-size: 2.5rem;
+}
+a {
+	font-size: 2rem;
+}
+ul li {
+	list-style: none;
+}
+footer {
+	background-color: hsl(201, 11%, 95%);
+}
+header, .snippets-section, .clipboard-section, .supercharge-section, .client-logo-section, .CTA-section {
+	padding: 65px 5%;
+}
+/*---------------------------------------------------
+Buttons
+---------------------------------------------------*/
+.download-btn-ios,
+.download-btn-mac {
+	margin: auto;
+	text-decoration: none;
+	color: white;
+	display: block;
+	width: 90%;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 50px;
+}
+.download-btn-ios {
+	background-color: hsl(171, 66%, 44%);
+	border-bottom: 2.5px solid hsl(171, 66%, 28%);
+	margin-top: 50px;
+	box-shadow: 0px 12px 12px 0px rgba(161, 247, 234,0.35);
+}
+.download-btn-mac {
+	background-color: hsl(233, 100%, 69%);
+	border-bottom: 2.5px solid hsl(233, 100%, 49%);
+	margin-top: 25px;
+	box-shadow: 0px 12px 12px 0px rgba(161, 171, 247,0.35);
+}
+.download-btn-ios:hover {
+	background-color: hsl(171, 66%, 64%);
+}
+.download-btn-mac:hover {
+	background-color: hsl(233, 100%, 79%);
+}
+/*---------------------------------------------------
+Header
+---------------------------------------------------*/
+header {
+	background-image: url(images/bg-header-mobile.png);
+	background-size: cover;
+}
+header img {
+	width: 100px;
+	margin-bottom: 50px;
 }
 
-
-
-
+/*---------------------------------------------------
+Main
+---------------------------------------------------*/
+/*Snippets*/
+.snippets-main {
+	padding-top: 75px;
+}
+.snippets-main img {
+	max-width: 100%;
+}
+.snippets-main h3 {
+	padding-top: 50px;
+}
+/*Clipboard*/
+.clipboard-section img {
+	width: 100%;
+	padding-top: 50px;
+}
+/*supercharge*/
+.supercharge-head {
+	padding-bottom: 25px;
+}
+.supercharge-items {
+padding-top: 50px;
+}
+.supercharge-items img {
+	width: 40px;
+	padding-bottom: 30px;
+}
+/*Client Logo Section*/
+.client-logo-section ul li img{
+	padding: 25px;
+}
 
 /*---------------------------------------------------
 Footer
 ---------------------------------------------------*/
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer {
+	margin-top: 65px;
+}
+footer, .more-info-section {
+	padding: 50px 0;
+}
+footer img{
+	width: 50px;
+}
+.more-info-section {
+	padding: 20px;
+}
+.more-info-section li {
+	color: hsl(210, 10%, 33%);
+}
+.more-info-section li:hover {
+	color: hsl(171, 66%, 44%);
+}
+.social-icons li {
+	display: inline-block;
+}
+.social-icons li i {
+	color: hsl(210, 10%, 33%);
+	font-size: 1.8rem;
+	padding: 10px;
+}
+.social-icons li i:hover {
+	color: hsl(171, 66%, 44%);
+}
+.attribution {
+	font-size: 11px; text-align: center;
+}
+.attribution a {
+	font-size: 11px;
+	color: hsl(228, 45%, 44%);
+}
